@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --brand-color: #f7c244;
+    --sec-color: #f44f16;
+    --tri-color: #cad1bf;
+    --tri-color-light: #f7f5ed;
+    --tri-color-dark: #8da89c;
+    --dark-color: #00342a;
+    --accrent-color: #f2727e;
+    
+}
+
+body {
+
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f5ed;
+    color: #333;
+}
+
+#app {
+    display: grid;
+    place-content: center;
+    place-items: center;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    /* border: #333 2px solid; */
+
+}
+
+#app a {
+    /* border: olive 2px solid; */
+    padding: 10px;
+}
+
+#app  p {
+    color: var(--tri-color-dark);
+    font-size: 16px;
+    text-align: center;
+}
+
+
+
+.barra {
+    margin-block: 20px;
+    background-color: var(--tri-color-dark);
+    height: 5px;
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.stack-bg {
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+    z-index: 1;
+    scale: .75;
+    opacity: .25;
+   /*  width: 200px;
+    height: 300px;
+    background: var(--tri-color-light);
+    border-radius: 32px;
+    box-shadow: 0 4px 32px #0002; */
+    position: relative;
+}
+
+.stack-content {
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Remova grid-column/grid-row de #app > a e #app > p */
+/* ...existing code... */
