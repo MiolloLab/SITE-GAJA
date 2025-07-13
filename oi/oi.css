@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+:root {
+    font-family: "oscine", sans-serif;
+}
+
 body {
     background-image: url("../assets/images/bg-elefante-01.png");
     background-repeat: no-repeat;
@@ -22,6 +26,13 @@ header {
     width: 80vw;
     max-width: 500px;
     height: auto;
+}
+
+.central {
+    /* border: 1px solid white; */
+    max-width: 32rem;
+    width: 90%;
+    margin: 3rem auto;
 }
 
 
