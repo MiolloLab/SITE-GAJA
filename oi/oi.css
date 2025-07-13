@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../assets/images/bg-elefante-01.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: top center;
+    background-color: black;
+    color: white;
+}
+
+header {
+    padding-top: 32px;
+    text-align: center;
+}
