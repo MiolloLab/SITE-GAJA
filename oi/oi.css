@@ -18,6 +18,12 @@ header {
     text-align: center;
 }
 
+.hImg {
+    width: 80vw;
+    max-width: 500px;
+    height: auto;
+}
+
 
 /* Telas Pequenas */
 
@@ -25,4 +31,10 @@ header {
     header {
         padding-top: 16px;
     }
+
+    .hImg {
+    max-width: 300px;
+        width: 90vw;
+    }
 }
+
