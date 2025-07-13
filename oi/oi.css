@@ -11,15 +11,26 @@
 body {
     background-image: url("../assets/images/bg-elefante-01.png");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% auto;
     background-position: top center;
     background-color: black;
     color: white;
 }
 
-h1, h2, h3 {
+h1, h2{
     margin-top: 2rem;
     margin-bottom: 1rem;
+}
+
+h3 {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+h4 {
+    margin-top: 2rem;
+    margin-botton: 0;
+    color: #f7c244;
 }
 
 p {
@@ -43,6 +54,14 @@ header {
     max-width: 32rem;
     width: 90%;
     margin: 3rem auto;
+}
+
+.fase {
+    border: 2px solid #f7c244;
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 12px;
+    color: #f7c244;
 }
 
 
