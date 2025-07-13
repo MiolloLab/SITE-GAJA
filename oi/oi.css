@@ -52,7 +52,7 @@ h4 {
 
 p {
     line-height: 140%;
-    opacity: 80%;
+    /* opacity: 80%; */
 }
 
 header {
@@ -71,6 +71,18 @@ header {
     max-width: 60rem;
     width: 90%;
     margin: 3rem auto;
+}
+
+.central img {
+    width: 100%;
+    height: auto;
+    /* margin-top: 1rem; */
+    margin-bottom: 1rem;
+}
+
+.topicos {
+    margin: 2rem auto;
+    width: 70%;
 }
 
 .fase {
@@ -98,6 +110,11 @@ header {
         padding-top: 16px;
     }
 
+    .topicos {
+    margin: 2rem auto;
+    width: 100%;
+}
+
     .hImg {
     max-width: 300px;
         width: 90vw;
@@ -114,7 +131,7 @@ header {
     }
 
     p {
-        font-size: 16pt;
+        font-size: 18pt;
     }
 
 }
