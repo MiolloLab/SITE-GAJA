@@ -7,16 +7,17 @@
 :root {
 
     --brand-color: #f7c244;
+    --accent-color-1: #f44f16;
+    --accent-color-2: #f2727e;
     --sec-color: #f44f16;
     --tri-color: #cad1bf;
     --tri-color-light: #f7f5ed;
     --tri-color-dark: #8da89c;
     --dark-color: #00342a;
-    --accrent-color: #f2727e;
 
-    font-family: "oscine", sans-serif;
-
-    
+    --font-title: "oscine", sans-serif;
+    --font-text: "Lexend", sans-serif;
+   
 }
 
 body {
@@ -24,6 +25,11 @@ body {
     font-family: 'Arial', sans-serif;
     background-color: #f7f5ed;
     color: #333;
+}
+
+/* Títulos */
+h1, h2, h3, h4 {
+    font-family: var(--font-title);
 }
 
 #app {
