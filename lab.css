@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    margin: 2rem auto;
+    width: 400px;
+    height: 400px;
+    position: relative;
+    z-index: 1;
+}
+
+.container-bg {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    width: 100%; height: 100%;
+    background-image: url(./assets/images/img-dif-01.png);
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    transition: filter 0.4s;
+}
+
+.box-infos, .box-efeito {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 0;  
+    left: 0;
+    
+}
+
+.box-efeito {
+    z-index: 2;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.8));
+    opacity: 0.2;
+    transition: opacity 0.4s;
+       
+}
+
+.box-infos {
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    opacity: 0;
+    transition: opacity 0.4s;
+
+
+}
+
+/* Efeitos apenas no hover do container */
+.container:hover .container-bg {
+    filter: blur(3px);
+}
+.container:hover .box-efeito {
+    opacity: 1;
+}
+.container:hover .box-infos {
+    opacity: 1;
+}
+
+
+
+h3 {
+    color: #fff;
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+p {
+    color: #fff;
+    text-align: center;
+    font-size: 1.4rem;
+    margin: 0 1rem 1rem;
+}
+
+
+/* .box {
+    width: 400px;
+    height: 400px;
+    border: 2px solid #000;
+    margin: 20px auto;
+    position: relative;
+}
+
+.item1, .item2 {
+    width: 150px;
+    height: 150px;
+}
+
+.item1 {
+    background-color: blue;
+    position: fixed;
+    left: 50px;
+    top: 50px;
+}
+
+.item2 {
+    background-color: red;
+    position: sticky;
+    top: 0;
+} */
+
+
+/* Ótima observação!
+No seu código, .item1 tem position: relative e left: 100%. O esperado seria mover 150px (a largura dele), mas ele está se movendo 400px (a largura do .box).
+
+Por quê?
+No CSS, quando você usa left: 100% com position: relative, a porcentagem é relativa à largura do elemento pai (no caso, .box), não ao próprio elemento.
+
+Resumindo:
+position: relative + left: 100%
+→ Move o elemento 100% da largura do elemento pai (a .box, que tem 400px).
+
+Se fosse left: 100px, aí sim seria 100px, independente do pai.
+
+Dica:
+Para mover o elemento em relação ao seu próprio tamanho, use transform: translateX(100%). */

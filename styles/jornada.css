@@ -24,10 +24,16 @@ main {
 
 }
 
+h5 {
+    font-weight: 500;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
 .temporada {
     margin: 0 auto;
     max-width: 720px;
-    height: 4rem;
+    height: 50rem;
     background-color: white;
     border-radius: 1rem;
 }
@@ -40,25 +46,57 @@ main {
     display: flex;
     justify-content: right;
     align-items: center;
-    padding: .5rem 2rem;
-    background-color: white;
+    padding: .25rem 2rem;
+    background-color: rgb(241, 241, 241);
     border-radius: 1rem 1rem 0 0;
 }
 
 .titulo-semana h1 {
-    color: var(--brand-color);
+    color: rgb(182, 182, 182);
     font-weight: 200;
-    font-size: 3rem;
-
-
-     
+    font-size: 3rem;  
 }
 
+
+.infos-semana, .actions-semana, .aquecimento {
+  display: grid;
+  grid-template-columns: 4fr 1fr 1fr 1fr 1fr 1fr;
+}
 
 .infos-semana {
-
+    color: rgb(121, 121, 121);
 }
 
-.actions-semana {
-
+ .aquecimento {
+    color: #9c3030;
 }
+
+.cell-info {
+    font-weight: 600;
+    text-align: center;
+    padding-block: 1rem;
+    border: 1px solid white;
+    background-color: rgb(224, 224, 224);
+    opacity: 1;
+}
+
+.cell-dia-a, .cell-dia-b {
+    opacity: 0.5;
+}
+
+.cell-dia-a {
+    font-weight: 600;
+
+    text-align: center;
+    padding-block: 1rem;
+    border: 1px solid white;
+    background-color: rgb(224, 224, 224);
+}
+.cell-dia-b {
+    font-weight: 600;
+    text-align: center;
+    padding-block: 1rem;
+    border: 1px solid white;
+    background-color: rgb(204, 204, 204);
+}
+
