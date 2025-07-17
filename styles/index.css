@@ -1,2 +1,12 @@
 @import url(./global.css);
 @import url(./jornada.css);
+
+*, body, html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header img {
+    display: block;
+}

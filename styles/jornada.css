@@ -1,4 +1,8 @@
 
+body {
+    background-color: bisque;
+}
+
 
 header {
   /* background-color: var(--brand-color); */
@@ -16,13 +20,11 @@ header img {
   
 }
 
-body {
-    background-color: bisque;
-}
 
-main {
 
-}
+/* main {
+
+} */
 
 h5 {
     font-weight: 500;
@@ -33,16 +35,20 @@ h5 {
 .temporada {
     margin: 0 auto;
     max-width: 720px;
-    height: 50rem;
+    height: auto + 2px;
     background-color: white;
     border-radius: 1rem;
 }
 
 .semana {
+    /* background-color: wheat; */
+    /* height: 15rem; */
+    border-radius: 1rem;
+    margin: .5rem 0;
 
 }
 
-.titulo-semana {
+.semana-titulo {
     display: flex;
     justify-content: right;
     align-items: center;
@@ -51,25 +57,58 @@ h5 {
     border-radius: 1rem 1rem 0 0;
 }
 
-.titulo-semana h1 {
+.semana-titulo h1 {
     color: rgb(182, 182, 182);
     font-weight: 200;
     font-size: 3rem;  
 }
 
 
-.infos-semana, .actions-semana, .aquecimento {
+.semana-header, .semana-tarefa {
   display: grid;
   grid-template-columns: 4fr 1fr 1fr 1fr 1fr 1fr;
 }
 
-.infos-semana {
+.base-gantt {
+    display: grid;
+    grid-template-columns: 4fr 1fr 3fr 1fr;
+}
+
+.semana-header {
     color: rgb(121, 121, 121);
 }
 
- .aquecimento {
+ .semana-tarefa {
+    position: relative;
+    z-index: 1;
     color: #9c3030;
 }
+
+.base-gantt {
+    position: absolute;
+    z-index: 2;
+    inset: 0;   
+}
+
+.cell-gantt-4 {
+    background-color: slateblue;
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid white; */
+    border-radius: .5rem;
+    opacity: 0.1;
+}
+
+.cell-gantt-5 {
+    background-color: slateblue;
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid white; */
+    border-radius: .5rem;
+    opacity: 0.4;
+}
+
+
 
 .cell-info {
     font-weight: 600;
