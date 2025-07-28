@@ -1,0 +1,24 @@
+.task-1 {
+    color: var(--task-color-01);
+}
+
+.task-2 {
+    color: var(--task-color-02);
+}
+
+.task-3 {
+    color: var(--task-color-03);
+}
+
+.task-4 {
+    color: var(--task-color-03);
+}
+
+.task-5 {
+    color: var(--task-color-05);
+}
+
+.acima {
+    
+    z-index: 2;
+}

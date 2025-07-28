@@ -33,6 +33,7 @@ h6 {
     text-align: center;
 }
 
+
 .temporada {
     margin: 0 auto;
     max-width: 720px;
@@ -129,6 +130,25 @@ h6 {
     border: 1px solid white;
     background-color: rgb(224, 224, 224);
     opacity: 1;
+    position: inherit;
+    z-index: 0;
+
+    a {
+        text-decoration: none;
+        transition: color .2s, 
+        letter-spacing 0.2s;
+        opacity: 0.3; 
+        
+
+    }
+
+    a:hover {
+        opacity: 1;
+        letter-spacing: 1px;
+
+          
+
+    }
 }
 
 .cell-dia-a, .cell-dia-b {
