@@ -21,14 +21,15 @@ header img {
 }
 
 
-
-/* main {
-
-} */
-
 h5 {
     font-weight: 500;
     font-size: 1.5rem;
+    text-align: center;
+}
+
+h6 {
+    font-weight: 500;
+    font-size: 1rem;
     text-align: center;
 }
 
@@ -36,31 +37,37 @@ h5 {
     margin: 0 auto;
     max-width: 720px;
     height: auto + 2px;
-    background-color: white;
+    /* background-color: var(--brand-color); */
     border-radius: 1rem;
 }
 
 .semana {
-    /* background-color: wheat; */
+    background-color: white;
     /* height: 15rem; */
     border-radius: 1rem;
     margin: .5rem 0;
-
+    
 }
+
 
 .semana-titulo {
     display: flex;
     justify-content: right;
     align-items: center;
     padding: .25rem 2rem;
-    background-color: rgb(241, 241, 241);
+    /* background-color: rgb(241, 241, 241); */
     border-radius: 1rem 1rem 0 0;
 }
 
 .semana-titulo h1 {
     color: rgb(182, 182, 182);
     font-weight: 200;
-    font-size: 3rem;  
+    font-size: 3rem;
+    text-transform: uppercase;   
+}
+
+.cell-info {
+    font-size: 1rem;
 }
 
 
@@ -71,7 +78,10 @@ h5 {
 
 .base-gantt {
     display: grid;
-    grid-template-columns: 4fr 1fr 3fr 1fr;
+    grid-template-columns: 4fr 1fr 1fr 1fr 1fr 1fr;
+    position: absolute;
+    z-index: 2;
+    inset: 0;  
 }
 
 .semana-header {
@@ -84,31 +94,33 @@ h5 {
     color: #9c3030;
 }
 
-.base-gantt {
-    position: absolute;
-    z-index: 2;
-    inset: 0;   
+.semana-tarefa:last-child {
+    border-radius: 0 0 1rem 1rem;
 }
 
-.cell-gantt-4 {
-    background-color: slateblue;
+
+.cell-parent-gantt {
+    position: relative;
+    /* background-color: seagreen; */
     width: 100%;
     height: 100%;
     /* border: 1px solid white; */
     border-radius: .5rem;
-    opacity: 0.1;
 }
 
-.cell-gantt-5 {
-    background-color: slateblue;
+.cell-gantt-null {
+    width: 100%;
+    height: 100%;
+    border-radius: .5rem;
+}
+
+.cell-gantt-fill {
+    background-color: var(--task-color-01);
     width: 100%;
     height: 100%;
     /* border: 1px solid white; */
     border-radius: .5rem;
-    opacity: 0.4;
 }
-
-
 
 .cell-info {
     font-weight: 600;
@@ -121,21 +133,24 @@ h5 {
 
 .cell-dia-a, .cell-dia-b {
     opacity: 0.5;
+    text-align: center;
 }
 
 .cell-dia-a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-weight: 600;
-
-    text-align: center;
-    padding-block: 1rem;
     border: 1px solid white;
     background-color: rgb(224, 224, 224);
 }
 .cell-dia-b {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-weight: 600;
-    text-align: center;
-    padding-block: 1rem;
     border: 1px solid white;
     background-color: rgb(204, 204, 204);
 }
+
 

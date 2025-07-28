@@ -1,5 +1,6 @@
 @import url(./global.css);
 @import url(./jornada.css);
+@import url(./icones.css);
 
 *, body, html {
     box-sizing: border-box;

@@ -2,6 +2,7 @@
 
 :root {
 
+    /* Cores da marca */
     --brand-color: #f7c244;
     --accent-color-1: #f44f16;
     --accent-color-2: #f2727e;
@@ -10,6 +11,16 @@
     --tri-color-light: #f7f5ed;
     --tri-color-dark: #8da89c;
     --dark-color: #00342a;
+
+    /* Cores da aplicação */
+    --task-color-01: rgba(218, 39, 241, 0.4);
+    --task-color-02: rgb(37, 21, 255, 0.4);
+    --task-color-03: rgb(0, 179, 255, 0.4);
+    --task-color-04: rgb(246, 255, 0, 0.4);
+    --task-color-05: rgb(255, 145, 0, 0.4);
+
+    --task-late: rgba(17, 12, 11, 0.4);
+    --task-done: rgb(65, 179, 0, 0.8);
 
     --font-title: "oscine", sans-serif;
     --font-text: "Lexend", sans-serif;
