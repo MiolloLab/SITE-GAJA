@@ -99,7 +99,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 button {
-    background-color: #fffdb8;
+    background-color: var(--brand-color);
     /* color: var(--sec-color); */
     border: none;
     padding: 10px 20px;
@@ -111,11 +111,11 @@ button {
     transform 0.2s ease;
 
     a {
-        color: var(--sec-color);
+        color: white;
         font-weight: 600;
         text-decoration: none;
         transition: color 0.2s ease;
-        opacity: 0.6;
+        opacity: .8;
     }
 }
 
